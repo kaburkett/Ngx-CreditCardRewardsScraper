@@ -2,9 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+## Pushing dist to gh-pages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+     if already exits, delete it first on github and locally
+     git branch -D gh-pages     
+     git checkout -b gh-pages
+     ng build
+     git add dist/Ngx-CreditCardRewardsScraper -f
+     git commit -m "push to gh-pages"
+     git subtree push --prefix 'dist/Ngx-CreditCardRewardsScraper' origin gh-pages
+     
 
 ## Code scaffolding
 
